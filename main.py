@@ -77,8 +77,10 @@ class MainWindow(QtWidgets.QMainWindow):
         self.Ui_MainWindow.tableWidget.setColumnCount(4)  # 设置table的列数
         self.Ui_MainWindow.tableWidget.verticalHeader().setSectionsClickable(False)  # 表头不可点击
         self.Ui_MainWindow.tableWidget.setHorizontalHeaderLabels(["id", "username", "password", "place"])  # 表头内容
+        # self.Ui_MainWindow.tableWidget.horizontalHeader().setBackgroundRole()
         self.Ui_MainWindow.tableWidget.setSelectionBehavior(QtWidgets.QAbstractItemView.SelectRows)  # 一次选一行
         self.Ui_MainWindow.tableWidget.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
+
 
     def show_all(self):
         """

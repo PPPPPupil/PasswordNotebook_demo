@@ -210,10 +210,10 @@
    <widget class="QTableWidget" name="tableWidget">
     <property name="geometry">
      <rect>
-      <x>60</x>
+      <x>100</x>
       <y>550</y>
-      <width>621</width>
-      <height>221</height>
+      <width>431</width>
+      <height>181</height>
      </rect>
     </property>
    </widget>
