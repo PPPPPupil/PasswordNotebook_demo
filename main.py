@@ -69,10 +69,10 @@ class MainWindow(QtWidgets.QMainWindow):
         self.Ui_MainWindow.pushButton_4.clicked.connect(self.on_push_button4_clicked)
 
         # call
-        self.query_show()
+        self.show_all()
         self.Ui_MainWindow.lineEdit_4.setPlaceholderText("query all if nothing")
 
-    def query_show(self):
+    def show_all(self):
         """
         将所有记录show在listView，在打开主面板的时候调用
         :return:
@@ -124,8 +124,8 @@ class MainWindow(QtWidgets.QMainWindow):
         :param place:
         :return:
         """
-
         place = self.Ui_MainWindow.lineEdit_4.text()
+
         if place == '':
             self.refresh_record(None)
         else:
