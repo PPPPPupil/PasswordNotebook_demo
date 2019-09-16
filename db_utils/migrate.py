@@ -24,7 +24,7 @@ class MyConnection(object):
 
     def delete_record(self, id=None):
         if id is not None:
-            self.cursor.execute("""DELETE FROM `tbl_password` WHERE `id`=?""", id)
+            self.cursor.execute("""DELETE FROM `tbl_password` WHERE `id`=?""", (id,))
             self.conn.commit()
 
     def modify_record(self,*args):
