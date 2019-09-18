@@ -1,5 +1,8 @@
-import sys
+import sys, os
+if hasattr(sys, 'frozen'):
+    os.environ['PATH'] = sys._MEIPASS + ";" + os.environ['PATH']
 from PyQt5 import QtCore
+import PyQt5
 from PyQt5 import QtWidgets
 from QTgeneration.MainWindow import Ui_MainWindow
 from QTgeneration.AddWindow import Ui_Form
